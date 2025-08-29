@@ -1,0 +1,10 @@
+body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; margin-top: 40px; }
+#character { font-size: 56px; margin-bottom: 12px; }
+#chat { width: 480px; height: 340px; border: 1px solid #ddd; padding: 12px; overflow-y: auto; background:#fff; }
+.controls { display:flex; gap:8px; margin-top:10px; }
+#input { width:360px; padding:8px; }
+.message { margin:6px 0; word-wrap:break-word; }
+.player { color:rgb(170, 0, 122); text-align:right; }
+.bot { color:rgb(67, 38, 154); text-align:left; }
+#sendBtn:disabled { opacity:0.5; cursor:not-allowed; }
+#status { margin-top:8px; color:#666; font-size:13px; }
