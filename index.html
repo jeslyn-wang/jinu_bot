@@ -6,15 +6,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="character">🙂</div>
-  <div id="chat"></div>
+  <!-- Left panel: chat + input + status -->
+  <div id="leftPanel">
+    <div id="chat"></div>
 
-  <div class="controls">
-    <input id="input" type="text" placeholder="Say something..." />
-    <button id="sendBtn">Send</button>
+    <div class="controls">
+      <input id="input" type="text" placeholder="Say something..." />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <div id="status">Loading Puter.js...</div>
   </div>
 
-  <div id="status">Loading Puter.js...</div>
+  <!-- Right panel: character -->
+  <div id="rightPanel">
+    <div id="character">🙂</div>
+  </div>
 
   <!-- working Puter.js -->
   <script src="https://js.puter.com/v2/"></script>

@@ -4,12 +4,12 @@ function detectEmotion(text) {
   const normalizedText = text.toLowerCase();
 
   const emotions = {
-    happy: ["great","fun","love","yay","awesome","joy","excited"],
+    happy: ["great","fun","love","yay","awesome","joy","excited", "good", "goodnight", "hi", "hey", "hello"],
     sad: ["sorry","sad","unhappy","depress","lonely","bad","down","miserable","heartbroken","shadow","puppet"],
     angry: ["angry","mad","upset","hate","annoyed","frustrated","furious","puppet","master","power","shadow","string","gwi-ma"],
     surprised: ["wow","surprise","amazing","whoa","oh my","shocked","unbelievable","astonished"],
-    flirty: ["cute","spark","charm","steal","sweet","babe","rumi","charming","darling","heart","crush","fire","love","😉","😍"],
-    pensive: ["think","contemplate","hm","thoughtful","consider","brooding","musing"]
+    flirty: ["cute", "smooth", "blush", "toes", "spark","charm","steal","sweet","babe","rumi","charming","darling","heart","crush","fire","love","😉","😍"],
+    pensive: ["think","contemplate","hm", "hmm", "thoughtful","consider","brooding","musing"]
   };
 
   const votes = { happy:0,sad:0,angry:0,surprised:0,flirty:0,pensive:0 };
@@ -23,7 +23,6 @@ function detectEmotion(text) {
   }
 
   if (normalizedText.includes("!")) votes.happy += 1;
-  if (normalizedText.includes("?")) votes.pensive += 1;
   if (normalizedText.includes("...")) votes.pensive += 1;
 
   const emojiMap = { "😄":"happy","🙂":"happy","😢":"sad","😠":"angry","😲":"surprised","😉":"flirty","😍":"flirty" };
