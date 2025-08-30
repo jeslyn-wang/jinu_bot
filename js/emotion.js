@@ -41,11 +41,11 @@ function updateCharacter(emotion) {
 
   switch(emotion){
     case "happy": imgSrc = "images/jinu_happy.png"; break;
-    case "sad": imgSrc = "images/jinuface.jpeg"; break;
-    case "angry": imgSrc = "images/jinuface.jpeg"; break;
+    case "sad": imgSrc = "images/neutral_jinu.png"; break;
+    case "angry": imgSrc = "images/angy_jinu.webp"; break;
     case "flirty": imgSrc = "images/jinu_flirty.png"; break;
-    case "pensive": imgSrc = "images/jinuface.jpeg"; break;
-    case "surprised": imgSrc = "images/jinuface.jpeg"; break;
+    case "pensive": imgSrc = "images/pensive_jinu.webp"; break;
+    case "surprised": imgSrc = "images/neutral_jinu.png"; break;
     default: imgSrc = "images/neutral_jinu.png";
   }
 
