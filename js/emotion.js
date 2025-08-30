@@ -36,14 +36,19 @@ function detectEmotion(text) {
 }
 
 function updateCharacter(emotion) {
-  const character = document.getElementById("character");
+  const characterImg = document.getElementById("character");
+  let imgSrc = "images/neutral_jinu.png";
+
   switch(emotion){
-    case "happy": character.textContent="😄"; break;
-    case "sad": character.textContent="😢"; break;
-    case "angry": character.textContent="😠"; break;
-    case "flirty": character.textContent="😏"; break;
-    case "pensive": character.textContent="🤔"; break;
-    case "surprised": character.textContent="😲"; break;
-    default: character.textContent="🙂";
+    case "happy": imgSrc = "images/jinu_happy.png"; break;
+    case "sad": imgSrc = "images/jinuface.jpeg"; break;
+    case "angry": imgSrc = "images/jinuface.jpeg"; break;
+    case "flirty": imgSrc = "images/jinu_flirty.png"; break;
+    case "pensive": imgSrc = "images/jinuface.jpeg"; break;
+    case "surprised": imgSrc = "images/jinuface.jpeg"; break;
+    default: imgSrc = "images/neutral_jinu.png";
   }
+
+  characterImg.src = imgSrc;
+
 }
